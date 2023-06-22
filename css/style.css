@@ -1,0 +1,94 @@
+body {
+	background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 2%, rgba(101,192,255,1) 50%, rgba(2,0,36,1) 98%);
+}
+html,body {
+	height: 100%;
+    font-family: arial,helvetica,verdana;
+    display: flex;
+    justify-content: center;
+  	align-items: center;
+    overflow: hidden;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+}
+.bg-card {
+    background-color: black;
+	background-image: url("./fundo.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 350px;
+    max-width: 100%;
+    width: 650px;
+    position: relative; 
+    border: 2px solid black;
+    border-radius: 10px;   
+}
+.card {
+	position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 13px;
+    border-radius: 10px;
+    width: 300px;
+    margin-left: 10px;
+}
+.card h1,p {
+	color: lightgray;
+    margin-bottom: 10px;
+}
+.card h1 {
+	text-align: center;
+    font-size: 25px;
+}
+.card p input[type=text]{
+	border: none;
+    outline: none;
+    padding: 7px 0px;
+    background-color: transparent;
+    border-bottom: 2px solid lightgray;
+    color: white;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.card p:hover {color: white;}
+.card p  input[type=radio]{
+    margin: 5px;
+}
+#pbtn {
+	text-align: center;
+}
+.card p  input[type=button]{
+	border: none; 
+    outline: none;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 45%;
+    color: #333;
+    font-size: 15px;
+    background-color: #ddd;
+    transition: 0.5s;
+}
+.card p  input[type=button]:hover {
+	cursor: pointer;
+    background-color: white;
+    color: black;
+}
+#outResposta {
+	margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
